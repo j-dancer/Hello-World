@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+        test
+    </title>
+    <script src="Scripts/jquery-1.6.3.min.js"></script>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <script>
+        $(function(){
+            var msg = "ilove you";
+            var x = msg.length;
+            var str = msg.toUpperCase();
+            $(".x").text("<i>" + x+"</i>");
+            $(".str").html("<i>"+str+"</i>");
+            $(".msg").html(msg);
+        });
+        $(".msg").click(function () {
+            alert($(".msg").html());
+        })
+        $("select").change(function(){ // 设置列表框change 事件
+
+            // 获取列表框所选中的全部选项的值
+            alert($("select  option:selected").val());
+
+            var strSel = $("select").val().join(",");
+
+            //$("input").val(strSel); // 显示列表框所选中的全部选项的值
+
+        });
+    </script>
+    <div class="main1">
+        <div class="x"></div>
+        <div class="str"></div>
+        <div class="msg"></div>
+        <select multiple="multiple" style="height:96px;width:85px">
+            <option value="1">Item 1</option>
+            <option value="2">Item 2</option>
+            <option value="3">Item 3</option>
+            <option value="4">Item 4</option>
+            <option value="5">Item 5</option>
+            <option value="6">Item 6</option>
+        </select>
+
+        <select id="sele">
+            <option value="7">Item 7</option>
+            <option value="8">Item 8</option>
+            <option value="9" selected>Item 9</option>
+        </select>
+    </div>
+
+</body>
+</html>
