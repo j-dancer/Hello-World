@@ -28,4 +28,4 @@ git push origin master
 ```html
 git pull origin master
 ```
-<font color=LightCoral>一般情况下，我们在`push`操作之前都会先进行`pull`操作，这样不容易造成冲突。`</font>
+<font color=LightCoral>**`Tips`：在我们向远程仓库提交代码的时候，一定要先进行pull操作，再进行push操作，防止本地仓库与远程仓库不同步导致冲突的问题**</font>
