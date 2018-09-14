@@ -29,4 +29,3 @@ git push origin master
 git pull origin master
 ```
 <font color=LightCoral>一般情况下，我们在`push`操作之前都会先进行`pull`操作，这样不容易造成冲突。`</font>
-
