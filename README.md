@@ -12,8 +12,8 @@
 - **`git branch a` 创建了一个名为a的分支**
 - **`git checkout a` 切换到a分支**
 - **`git merge a` 切换到master分支，然后输入git merge a命令，将a分支合并到master分支**
-`Tips:  
-在合并分支的时候，要考虑到两个分支是否有冲突，如果有冲突，则不能直接合并，需要先解决冲突；反之，则可以直接合并。`
+<font color=LightCoral>Tips:  
+在合并分支的时候，要考虑到两个分支是否有冲突，如果有冲突，则不能直接合并，需要先解决冲突；反之，则可以直接合并。</font>
 - **`git git branch -d` 删除分支（git git branch -d a 表示删除a分支）**
 - **`git tag` 在命令行窗口的光标处，输入git tag v1.0命令，为当前分支添加标签**
 
@@ -28,5 +28,5 @@ git push origin master
 ```html
 git pull origin master
 ```
-`一般情况下，我们在`push`操作之前都会先进行`pull`操作，这样不容易造成冲突。`
+<font color=LightCoral>一般情况下，我们在`push`操作之前都会先进行`pull`操作，这样不容易造成冲突。`</font>
 
