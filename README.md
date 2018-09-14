@@ -29,3 +29,16 @@ git push origin master
 git pull origin master
 ```
 <font color=LightCoral>**`Tips`：在我们向远程仓库提交代码的时候，一定要先进行pull操作，再进行push操作，防止本地仓库与远程仓库不同步导致冲突的问题**</font>
+
+## 3、多人协作的工作模式通常如下：
+---------
+- （1）首先将远程仓库克隆为本地仓库
+git clone git@github.com:xxx/LearnGit.git
+- （2）在本地创建和远程分支对应的分支
+git checkout -b <本地分支名> origin/<远程分支名>
+本地和远程分支的名称最好一致；
+- （3）在本地分支完成任务后，可以试图用git push <远程主机名> <本地分支名>推送自己的修改；
+- （2）如果推送失败，则表明远程分支比本地更新，需要先用git pull试图合并；
+- （3）如果pull失败并提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream-to=<远程主机名>/<远程分支名>  <本地分支名>创建链接；
+- （4）如果合并有冲突，则解决冲突，并在本地提交（add => commit）；
+- （5）没有冲突或者解决掉冲突后，再用git push <远程主机名> <本地分支名>推送就能成功。
