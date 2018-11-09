@@ -1,6 +1,7 @@
 # 构建vue-cli项目
-打开cmd，进入想要创建项目的目录下，输入：`vue init webpack projectname`
+## 创建项目
 ---
+- 打开cmd，进入想要创建项目的目录下，输入：`vue init webpack projectname`
 - `Project name`：——项目名称
 - `Project description`：——项目描述
 - `Author`:——作者
@@ -13,3 +14,9 @@
 mmended) npm`：回车
 
 ** 等待项目完成构建即可 **
+
+## 运行项目
+---
+- 打开cmd，进入到项目所在目录下，输入npm run dev,回车，启动项目
+- 完成后，浏览器会自动打开，监听端口8080
+- 恭喜你，已成功构建vue-cli项目，接下来就可以开始开发啦
