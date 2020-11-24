@@ -42,3 +42,27 @@ git checkout -b <本地分支名> origin/<远程分支名>
 - （3）如果pull失败并提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream-to=<远程主机名>/<远程分支名>  <本地分支名>创建链接；
 - （4）如果合并有冲突，则解决冲突，并在本地提交（add => commit）；
 - （5）没有冲突或者解决掉冲突后，再用git push <远程主机名> <本地分支名>推送就能成功。
+
+## 4、新建项目并提交文章
+创建一个新仓库
+git clone git@gitlab.39.net:xxx/project.git
+cd project
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+推送现有文件夹
+cd existing_folder
+git init
+git remote add origin git@gitlab.39.net:hospital-projects/gdeyenet.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+推送现有的 Git 仓库
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin git@gitlab.39.net:hospital-projects/gdeyenet.git
+git push -u origin --all
+git push -u origin --tags
