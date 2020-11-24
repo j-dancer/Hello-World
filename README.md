@@ -44,25 +44,25 @@ git checkout -b <本地分支名> origin/<远程分支名>
 - （5）没有冲突或者解决掉冲突后，再用git push <远程主机名> <本地分支名>推送就能成功。
 
 ## 4、新建项目并提交文章
-创建一个新仓库
-git clone git@gitlab.39.net:xxx/project.git
-cd project
-touch README.md
-git add README.md
-git commit -m "add README"
-git push -u origin master
+**创建一个新仓库
+- git clone git@gitlab:xxx/project.git
+- cd project
+- touch README.md
+- git add README.md
+- git commit -m "add README"
+- git push -u origin master
 
-推送现有文件夹
-cd existing_folder
-git init
-git remote add origin git@gitlab.39.net:hospital-projects/gdeyenet.git
-git add .
-git commit -m "Initial commit"
-git push -u origin master
+**推送现有文件夹
+- cd existing_folder
+- git init
+- git remote add origin git@gitlab:xxx/project.git
+- git add .
+- git commit -m "Initial commit"
+- git push -u origin master
 
-推送现有的 Git 仓库
-cd existing_repo
-git remote rename origin old-origin
-git remote add origin git@gitlab.39.net:hospital-projects/gdeyenet.git
-git push -u origin --all
-git push -u origin --tags
+**推送现有的 Git 仓库
+- cd existing_repo
+- git remote rename origin old-origin
+- git remote add origin git@gitlab:xxx/project.git
+- git push -u origin --all
+- git push -u origin --tags
